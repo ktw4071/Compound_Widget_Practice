@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tk="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
         android:id="@+id/display_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="커스텀 복합 위젯TEST"
+        android:text="Custum Compound Widget TEST"
         android:gravity="center"/>
     <com.example.ccei.compoundwidgetpj.ImageTextCompoundWidget
         android:layout_width="wrap_content"
@@ -20,15 +21,9 @@
         android:id="@+id/compound_widget"
         android:layout_below="@+id/display_title"
         android:layout_alignParentLeft="true"
+        tk:membername="Taewoo Kim"
+        tk:myimage="@mipmap/ic_launcher"
         android:layout_alignParentStart="true">
     </com.example.ccei.compoundwidgetpj.ImageTextCompoundWidget>
 
-    <com.example.ccei.compoundwidgetpj.ImageTextCompoundWidget
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/compound_widget2"
-        android:layout_below="@+id/compound_widget"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-    </com.example.ccei.compoundwidgetpj.ImageTextCompoundWidget>
 </RelativeLayout>
