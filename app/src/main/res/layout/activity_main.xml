@@ -25,5 +25,13 @@
         tk:myimage="@mipmap/ic_launcher"
         android:layout_alignParentStart="true">
     </com.example.ccei.compoundwidgetpj.ImageTextCompoundWidget>
-
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonStyleSmall"
+        android:text="Change"
+        android:layout_below="@id/compound_widget"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 </RelativeLayout>
