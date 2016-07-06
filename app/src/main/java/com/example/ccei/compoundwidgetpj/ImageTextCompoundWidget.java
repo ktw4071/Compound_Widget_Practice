@@ -1,6 +1,7 @@
 package com.example.ccei.compoundwidgetpj;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -56,6 +57,14 @@ public class ImageTextCompoundWidget extends LinearLayout {
                 }
             }
         });
+
+        if(attrs != null){
+            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.ImageTextCompoundWidget);
+            String memberName = ta.getString(R.styleable.ImageTextCompoundWidget_membername);
+            int imageResID = ta.getResourceId(R.styleable.ImageTextCompoundWidget_myimage, R.mipmap.ic_launcher);
+            imageIcon.setImageResource(imageResID);
+            textTitle.setText(memberName);
+        }
     }
 
     public void setImageText(ImageTextData data){
@@ -64,10 +73,12 @@ public class ImageTextCompoundWidget extends LinearLayout {
         textTitle.setText(data.title);
     }
 
-    public void setTextTitle(String title) {
+/*  public void setTextTitle(String title) {
         if (data == null){
             data = new ImageTextData();
         }
         data.title = title;
     }
+*/
+
 }

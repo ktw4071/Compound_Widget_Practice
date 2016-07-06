@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ImageTextCompoundWidget">
-        <att name="myimage" format="reference"/> // format="reference|string|dimension"
+        <attr name="myimage" format="reference"/> // format="reference|string|dimension"
         <attr name="membername" format="string"/> //format+"string|android:src"
     </declare-styleable>
 </resources>
